@@ -37,3 +37,8 @@ git push -u origin beta
 #### Visualizing branches
 
 ![](https://imgur.com/gGgnF2o.png)
+
+#### Pull request
+
+![](https://imgur.com/Ni0WyBq.png)
+![](https://imgur.com/dFZ9wgJ.png)
