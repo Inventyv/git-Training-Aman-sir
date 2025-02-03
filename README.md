@@ -135,7 +135,6 @@ git push -u origin beta
 
 **Result:** All branches are now available on GitHub.
 
-Here is an image showing the branches created:
 ![](https://imgur.com/5DPjz0Z.png)
 
 ## Setting Branch Rules
