@@ -1,6 +1,6 @@
-# Git-Training
+# git-training
 
-This repository is designed to teach you Git and GitHub in detail. It covers everything from basic Git configuration to creating repositories, managing branches, and making pull requests.
+This repository is designed to teach you Git and GitHub in detail. It covers everything from basic Git configuration to creating repositories, managing branches, setting branch rules, and making pull requests.
 
 ## Table of Contents
 
@@ -8,6 +8,7 @@ This repository is designed to teach you Git and GitHub in detail. It covers eve
 - [Configuring Git](#configuring-git)
 - [Creating a Repository](#creating-a-repository)
 - [Creating and Managing Branches](#creating-and-managing-branches)
+- [Setting Branch Rules](#setting-branch-rules)
 - [Visualizing Branches](#visualizing-branches)
 - [Pull Requests](#pull-requests)
 
@@ -137,29 +138,51 @@ git push -u origin beta
 Here is an image showing the branches created:
 ![](https://imgur.com/5DPjz0Z.png)
 
-## Visualizing Branches
+## Setting Branch Rules
 
-To see all branches locally, use:
+To enforce branch protection rules on GitHub:
 
-```bash
-git branch
-```
+1. Navigate to your repository on GitHub.
+2. Go to **Settings** > **Branches**.
+3. Under **Branch protection rules**, click **Add rule**.
+4. Enter the branch name you want to protect (e.g., `main`).
+5. Select rules such as:
+   - Require pull request reviews before merging.
+   - Require status checks to pass before merging.
+   - Restrict who can push to the branch.
+6. Click **Save changes**.
 
-Here is an image visualizing the branches:
-![](https://imgur.com/gGgnF2o.png)
+**Result:** The selected branch will now have enforced rules, preventing direct commits and ensuring a controlled workflow.
 
 ## Pull Requests
 
 To create a pull request:
 
 1. Go to GitHub and navigate to your repository.
-2. Click "Pull Requests" > "New Pull Request".
-3. Select the branch to merge and compare changes.
-4. Click "Create Pull Request" and add a description.
-5. Click "Merge Pull Request" once reviewed.
+2. Click on the **Pull Requests** tab and then click **New Pull Request**.
+3. In the pull request creation page:
+   - Select the **base** branch (e.g., `main`).
+   - Select the **compare** branch (e.g., `dev`).
+   - GitHub will show the differences between these branches.
+4. Click **Create Pull Request**.
+5. Add a title and description explaining the changes.
+6. Assign reviewers, labels, or projects if needed.
+7. Click **Submit Pull Request**.
+8. Once the pull request is reviewed, click **Merge Pull Request**.
+9. Confirm the merge and delete the branch if it's no longer needed.
 
 Here are images illustrating the process:
+
+We are adding the protection rule for the branch here:
 ![](https://imgur.com/Ni0WyBq.png)
+
+These are the available options to add rules from:
+![](https://imgur.com/vdS33Rt.png)
+
+Finalizing the pull request process:
 ![](https://imgur.com/dFZ9wgJ.png)
 
-**Result:** The changes are merged into the main branch successfully.
+You can see the rule you added for the main branch here:
+![](https://imgur.com/rAhixKs.png)
+
+**Result:** The pull request is successfully merged into the main branch, ensuring a controlled and reviewed workflow.
