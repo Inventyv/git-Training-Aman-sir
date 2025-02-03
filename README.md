@@ -2,7 +2,7 @@
 
 This repository is designed to teach you Git and GitHub in detail. It covers everything from basic Git configuration to creating repositories, managing branches, setting branch rules, and making pull requests.
 
-## Table of Contents
+# Table of Contents
 
 - [Basics of Git](#basics-of-git)
 - [Configuring Git](#configuring-git)
@@ -14,11 +14,11 @@ This repository is designed to teach you Git and GitHub in detail. It covers eve
 
 ---
 
-## Basics of Git
+# Basics of Git
 
 Git is a powerful version control system that helps you track changes in your codebase over time. It allows multiple people to collaborate on the same project, ensuring that all changes are tracked and managed efficiently.
 
-### Configuring Git
+# Configuring Git
 
 Before using Git, you need to configure it with your username and email so that your commits are properly attributed to you. Run the following commands to set your global username and email:
 
@@ -27,13 +27,13 @@ git config --global user.name "Your Name"
 git config --global user.email "yourname@example.com"
 ```
 
-### Result:
+# Result:
 
 After running these commands, Git will use this information for all your commits, ensuring proper attribution.
 
-## Creating a Repository
+# Creating a Repository
 
-### Initializing a Git Repository
+# Initializing a Git Repository
 
 To create a new Git repository and push your files to GitHub, follow these steps:
 
@@ -70,7 +70,7 @@ Here is a practical illustration:
 
 **Explanation:** The image shows the repository setup in the local machine, and an `index.html` file added.
 
-### Committing and Pushing Changes
+# Committing and Pushing Changes
 
 1. Add the new file to Git tracking:
 
@@ -99,7 +99,7 @@ Here is a practical illustration:
 This is how it looks on GitHub after adding the file:
 ![](https://imgur.com/9EUqDQP.png)
 
-## Creating and Managing Branches
+# Creating and Managing Branches
 
 To create multiple branches for different features:
 
